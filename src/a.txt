@@ -1,0 +1,18 @@
+<div className=" container m-auto px-4">
+              <h2 id="about" className=" text-2xl font-semibold">About Me</h2>
+
+              <div className=" mt-6 relative before:absolute before:top-0 before:left-0 before:bottom-0 before:w-1 before:bg-white">
+                  <div className="pt-1 ml-6">
+                    <p className=" text-xl">Graduated from vinayaka mission research and for about two years i have been designing extensive web page late qualified as a crossfit trainer and now i am looking for fullstack developer internship / job  i am very corious to learn the new technology</p>
+                  </div>
+                  <div className="pt-10 ml-6">
+                    <p className=" text-xl">Graduated from vinayaka mission research and for about two years i have been designing extensive web page late qualified as a crossfit trainer and now i am looking for fullstack developer internship / job  i am very corious to learn the new technology</p>
+                  </div>
+                  <div className="pt-10 ml-6">
+                    <p className=" text-xl">Graduated from vinayaka mission research and for about two years i have been designing extensive web page late qualified as a crossfit trainer and now i am looking for fullstack developer internship / job  i am very corious to learn the new technology</p>
+                  </div>
+                  <div className="pt-10 ml-6">
+                    <p className=" text-xl">Graduated from vinayaka mission research and for about two years i have been designing extensive web page late qualified as a crossfit trainer and now i am looking for fullstack developer internship / job  i am very corious to learn the new technology</p>
+                  </div>
+              </div>
+          </div>
