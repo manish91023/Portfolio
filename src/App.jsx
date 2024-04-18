@@ -2,9 +2,15 @@ import "./App.css"
 import profileImg from "./assets/manishprofile.png"
 import project1 from "./assets/recipe.png"
 import project2 from "./assets/link shortner.png"
+import project3 from "./assets/generegames.png"
+import project4 from "./assets/blogProject.png"
 import linkedin from "./assets/10464412.png"
 import github from "./assets/github.png"
 import { FaArrowCircleDown } from "react-icons/fa";
+import aboutImage from "./assets/animatebanner.gif"
+import { PiStudentFill } from "react-icons/pi";
+import { GiAchievement } from "react-icons/gi";
+import { FaProjectDiagram } from "react-icons/fa";
 
 
 function App() {
@@ -19,7 +25,7 @@ function App() {
           <div className=" flex justify-between items-center ">
 
             <div>
-              <h1 className=" font-bold text-xl ">Manish <span className=" text-red-600">Portfolio</span></h1>
+              <h1 className=" font-bold text-xl  ">Manish <span className=" text-red-600">Portfolio</span></h1>
             </div>
 
 
@@ -27,13 +33,13 @@ function App() {
               <ul className=" flex gap-3">
 
                 <li>
-                  <a href="#project" className=" text-gray-400 hover:text-white cursor-pointer">Projects</a>
+                  <a href="#project" className=" text-gray-400 hover:text-white cursor-pointer sm:border sm:px-6 sm:py-3 hover:bg-slate-600">Projects</a>
                 </li>
                 <li>
-                  <a href="#technologies" className=" text-gray-400 hover:text-white cursor-pointer">Technologies</a>
+                  <a href="#technologies" className=" text-gray-400 hover:text-white cursor-pointer sm:border sm:px-6 sm:py-3 hover:bg-slate-600">Technologies</a>
                 </li>
                 <li>
-                  <a href="#about" className=" text-gray-400 hover:text-white cursor-pointer">About Me</a>
+                  <a href="#aboutus" className=" text-gray-400 hover:text-white cursor-pointer sm:border sm:px-6 sm:py-3 hover:bg-slate-600">About Me</a>
                 </li>
               </ul>
             </div>
@@ -52,22 +58,22 @@ function App() {
                 Full Stack Developer: Crafting Seamless Solutions from Frontend to Backend, Seeking to Apply Competent Development Skills with Focus on Collaboration, Communication, and Passion. Dedicated to Building Innovative and User-Centric Applications Through Agile Development Practices
               </p>
               <div className=" flex gap-6">
-              <a className=" text-black text-xl font-bold" href="https://drive.google.com/file/d/1b0FkL08GE3rRG1vPyYcU9IMQ7gioyx23/view" download>
-                <div className=" cursor-pointer flex justify-center gap-2 text-center  bg-gradient-to-tr from-purple-500 to-yellow-500 py-3 w-[200px] h-[50px] mt-5 rounded-full ">
-                  <h2>Resume</h2>
-                  <FaArrowCircleDown className=" animate-drop slide mt-2" />
-                </div>
-              </a>
-              <a className=" text-black text-xl font-bold" href="https://drive.google.com/file/d/1b0FkL08GE3rRG1vPyYcU9IMQ7gioyx23/view" download>
-                <div className=" cursor-pointer flex justify-center gap-2 text-center  bg-gradient-to-tr from-green-500 to-yellow-500 py-3 w-[200px] h-[50px] mt-5 rounded-full ">
-                  <h2>Github</h2>
-                  <img className=" ml-2 mt-2 animate-bounce" src={github} alt="" width={25} />
-                </div>
-              </a>
+                <a className=" text-black text-xl font-bold" href="https://drive.google.com/file/d/1b0FkL08GE3rRG1vPyYcU9IMQ7gioyx23/view" download>
+                  <div className=" cursor-pointer flex justify-center gap-2 text-center  bg-gradient-to-tr from-purple-500 to-yellow-500 py-3 w-[150px] sm:w-[200px] h-[50px] mt-5 rounded-full ">
+                    <h2>Resume</h2>
+                    <FaArrowCircleDown className=" animate-drop slide mt-2" />
+                  </div>
+                </a>
+                <a className=" text-black text-xl font-bold" href="https://github.com/manish91023" target="_blank">
+                  <div className=" cursor-pointer flex justify-center gap-2 text-center  bg-gradient-to-tr from-green-500 to-yellow-500 py-3 w-[150px] sm:w-[200px] h-[50px] mt-5 rounded-full ">
+                    <h2>Github</h2>
+                    <img className=" ml-2 mt-2 animate-bounce" src={github} alt="" width={25} />
+                  </div>
+                </a>
               </div>
-             
+
             </div>
-               
+
 
             <div>
 
@@ -107,16 +113,39 @@ function App() {
                 <p className=" text-gray-400 mt-4">this recipe book are fully build in react vite technology and backend use Nodejs express  framework.</p>
 
                 <div className=" flex  mt-2 gap-2 justify-evenly">
-                  <a href="#" target="_blank"> <button className=" px-10 py-2 bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-cyan-500 hover:to-blue-700">Live Preview</button></a>
+                  <a href="https://manishlinkshortner.netlify.app" target="_blank"> <button className=" px-10 py-2 bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-cyan-500 hover:to-blue-700">Live Preview</button></a>
                   <a href="https://github.com/manish91023/CodeClauseInternship_Project_Linkshortner" target="_blank"> <button className=" px-6 py-2 border rounded-full hover:bg-blue-600">Checkout github</button></a>
                 </div>
 
               </div>
 
             </div>
+            <div className=" flex  sm:flex-row flex-col gap-10 mt-11 w-full ">
+              <div className=" border border-gray-500 p-3 rounded-md flex-grow">
+                <img src={project3} alt="" width={700} />
+                <h3 className=" text-lg font-bold mt-5">Recipe Book app demo</h3>
+                <p className=" text-gray-400 mt-4">this recipe book are fully build in react vite technology and backend use Nodejs express  framework.</p>
 
+                <div className=" flex  mt-2 gap-2 justify-evenly">
+                  <a href="https://generegames.netlify.app" target="_blank"> <button className=" px-10 py-2 bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-cyan-500 hover:to-blue-700">Live Preview</button></a>
+                  <a href="https://github.com/manish91023/Generes-Game" target="_blank"> <button className=" px-6 py-2 border rounded-full hover:bg-blue-600">Checkout github</button></a>
+                </div>
 
+              </div>
 
+              <div className=" border border-gray-500 p-5 rounded-md flex-grow">
+                <img src={project4} alt="" width={700} />
+                <h3 className=" text-lg font-bold mt-5">Recipe Book app demo</h3>
+                <p className=" text-gray-400 mt-4">this recipe book are fully build in react vite technology and backend use Nodejs express  framework.</p>
+
+                <div className=" flex  mt-2 gap-2 justify-evenly">
+                  <a href="https://manishblog.netlify.app/article-list" target="_blank"> <button className=" px-10 py-2 bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-cyan-500 hover:to-blue-700">Live Preview</button></a>
+                  <a href="https://github.com/manish91023/CodeClauseInternship_Project_Linkshortner" target="_blank"> <button className=" px-6 py-2 border rounded-full hover:bg-blue-600">Checkout github</button></a>
+                </div>
+
+              </div>
+
+            </div>
 
           </div>
         </section>
@@ -198,27 +227,67 @@ function App() {
           </section>
 
           {/* about section  */}
+
           <section className="py-8">
+
+            <div id="aboutus">
+              < p className=" text-center text-3xl font-bold my-8">About Us</p>
+            </div>
+
             <div className=" container m-auto px-4">
+              <div className=" flex flex-col sm:flex-row">
+
+                <div className=" w-[100%] h-[400px] mx-[20px] sm:mx-0">
+                  <img className="w-[310px] h-[310px] sm:w-[400px] sm:h-[400px] rounded-lg" src={aboutImage} alt="" />
+                </div>
+                <div className=" w-[100%] ">
+                <div className=" flex flex-wrap gap-2 justify-center ">
+                  <div className=" bg-[#1f3057] w-[150px] h-[220px] py-2  rounded-lg hover:bg-transparent border transition-all ">
+                    <GiAchievement className=" mx-auto" />
+                    <h2 className=" text-center font-bold">Student</h2>
+                    <p className=" text-center">VINAYAKA MISSION RESEARCH FOUNDATION (2022-26)</p>
+                  </div>
+
+                  <div className=" bg-[#1f3057] w-[150px] h-[220px] py-2  rounded-lg hover:bg-transparent border transition-all ">
+                    <PiStudentFill className=" mx-auto" />
+                    <h2 className=" text-center font-bold">Course</h2>
+                    <p className=" text-center"> B.E(Computer Science & Engineering)</p>
+                  </div>
+
+                  <div className=" bg-[#1f3057] w-[150px] h-[220px] py-2  rounded-lg hover:bg-transparent border transition-all ">
+                    <FaProjectDiagram className=" mx-auto" />
+                    <h2 className=" text-center font-bold">Projects</h2>
+                    <p className=" text-center">3+ Completed</p>
+                  </div>
+                </div>
+                <div className=" my-4">
+                   <p className=" font-serif">
+                   I am looking for an Entry-level position in the field of Mern stack Development or Software Development. Currently pursuing Distance MCA from Chandigarh University, And I have a good knowledge of Java, Reactjs, NodeJs, Express Js, MongoDB, C, C++, Data Structures and Algorithms, HTML, CSS and JavaScript. Looking for an Internship opportunity or a Full-time opportunity as a Software Developer to follow my passion and that is Solving Problems.
+                   </p>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div className=" container m-auto px-4 ">
               <h1 className=" text-3xl font-bold text-green-500">EDUCATION</h1>
-              <div className=" relative before:absolute before:top-0 before:left-0 before:bottom-0 before:w-2 before:bg-white before:rounded-lg">
+              <div className=" relative before:absolute before:top-0 before:left-0 before:bottom-0 before:w-2 before:bg-white before:rounded-lg ">
                 <div className=" mx-8">
-                  <div className="   inset-0   h-[192px] mt-4 px-2 sm:px-12 sm:py-6 rounded-lg text-black bg-gradient-to-tr from-blue-300 to-purple-200 before:w-6 before:h-6 before:bg-green-500 before:rounded-full before:border before:absolute before:-left-2 before:top-0 before:block">
+                  <div className=" text-white   inset-0   h-[192px] mt-4 px-2 sm:px-12 sm:py-6 rounded-lg bg-gradient-to-tr from-[#000] to-[#3533cd] before:w-6 before:h-6 before:bg-green-500 before:rounded-full before:border before:absolute before:-left-2 before:top-0 before:block">
                     <h2 className=" font-bold text-2xl text-green-500">2018 - 2019</h2>
-                    <h1 className=" text-2xl text-blue-950 font-bold">High School Degree/10th</h1>
+                    <h1 className=" text-2xl  font-bold text-yellow-200">High School Degree/10th</h1>
                     <p className="font-serif sm:font-bold">UTKARMIT MADHYA VIDYAKAY,GANGAKARHARRIYA <span>Bihar,India</span></p>
                     <p>Percentage : 82%</p>
                   </div>
-                  <div className="  h-[170px] mt-4 px-2 sm:px-12 sm:py-6 rounded-lg text-black bg-gradient-to-tr from-blue-300 to-purple-200 before:w-6 before:h-6 before:bg-green-500 before:rounded-full before:border before:absolute before:-left-2 before:top-[185px] before:block">
+                  <div className=" text-white h-[170px] mt-4 px-2 sm:px-12 sm:py-6 rounded-lg bg-gradient-to-tr from-[#000] to-[#3533cd] before:w-6 before:h-6 before:bg-green-500 before:rounded-full before:border before:absolute before:-left-2 before:top-[185px] before:block">
                     <h2 className="font-bold text-2xl text-green-500">2019 - 2021</h2>
-                    <h1 className=" text-2xl text-blue-950 font-bold">INTERMEDIATE/12th</h1>
+                    <h1 className=" text-2xl  font-bold text-yellow-200">INTERMEDIATE/12th</h1>
                     <p className=" font-serif sm:font-bold">SABOUR COLLEGE SABOUR <span>Bihar,India</span></p>
                     <p className=" font-sans">Percentage : 81%</p>
                   </div>
-                  <div className=" h-[170px] mt-4 px-2 sm:px-12 sm:py-6 rounded-lg text-black bg-gradient-to-tr from-blue-300 to-purple-200 before:w-6 before:h-6 before:bg-green-500 before:border before:rounded-full before:block before:absolute before:-left-2 before:top-[370px]">
-                    <h2 className="font-bold text-2xl text-green-500">2012 - 2026</h2>
-                    <h1 className=" text-2xl text-blue-950 sm:font-bold">BACHELOR'S DEGREE</h1>
-                    <p className="font-serif sm:font-bold">VINAYAKA MISSION RESEARCH FOUNDATION SALEM <span>Tamilnadu,India</span></p>
+                  <div className=" text-white h-[170px] mt-4 px-2 sm:px-12 sm:py-6 rounded-lg  bg-gradient-to-tr from-[#000] to-[#3533cd] before:w-6 before:h-6 before:bg-green-500 before:border before:rounded-full before:block before:absolute before:-left-2 before:top-[370px]">
+                    <h2 className="font-bold text-2xl text-green-500">2022 - 2026</h2>
+                    <h1 className=" text-2xl  sm:font-bold text-yellow-200">BACHELOR'S DEGREE</h1>
+                    <p className="font-serif sm:font-bold ">VINAYAKA MISSION RESEARCH FOUNDATION SALEM <span>Tamilnadu,India</span></p>
                     <p>CGPA : 8.9/10</p>
                   </div>
                 </div>
@@ -227,7 +296,7 @@ function App() {
           </section>
           {/* footer  goes here*/}
           <section className=" py-8  text-[#fff] relative border-t-2 border-gray-300  ">
-            <div className="  absolute  inset-0 md:bg-gradient-to-b from-transparent via-transparent to-blue-600 h-[200px] opacity-80  ">
+            <div className="  absolute  inset-0 md:bg-gradient-to-b from-transparent via-transparent to-slate-600 h-[200px] opacity-80  ">
               <div className=" container m-auto px-4 py-2 ">
                 <div className=" flex flex-col px-4 font-normal  md:flex-row justify-between">
                   <div className="about-footer ">
@@ -242,7 +311,7 @@ function App() {
                       <ul>
                         <li><a href="#project">Projects</a></li>
                         <li><a href="#technologies">Technologies</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#aboutus">About</a></li>
                       </ul>
 
                     </div>
