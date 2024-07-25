@@ -4,6 +4,7 @@ import project1 from "./assets/recipe.png"
 import project2 from "./assets/link shortner.png"
 import project3 from "./assets/generegames.png"
 import project4 from "./assets/blogProject.png"
+import project5 from "./assets/youtubeclone.png"
 import linkedin from "./assets/10464412.png"
 import github from "./assets/github.png"
 import { FaArrowCircleDown } from "react-icons/fa";
@@ -12,9 +13,15 @@ import { PiStudentFill } from "react-icons/pi";
 import { GiAchievement } from "react-icons/gi";
 import { FaProjectDiagram } from "react-icons/fa";
 
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react"
 
 function App() {
 
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
 
   return (
     <>
@@ -95,10 +102,10 @@ function App() {
           <div className=" container m-auto px-4">
             <h2 id="project" className=" text-2xl font-semibold ">Project</h2>
             <div className=" flex  sm:flex-row flex-col gap-10 mt-11 w-full ">
-              <div className=" border border-gray-500 p-3 rounded-md flex-grow">
+              <div className=" border border-gray-500 p-3 rounded-md ">
                 <img src={project1} alt="" width={700} />
                 <h3 className=" text-lg font-bold mt-5">Recipe Book app demo</h3>
-                <p className=" text-gray-400 mt-4">this recipe book are fully build in react vite technology and backend use Nodejs express  framework.</p>
+                <p className=" text-gray-400 mt-4">The Recipe Book App is your ultimate culinary companion, designed to bring the joy of cooking directly to your fingertips. Whether you're a seasoned chef or a novice in the kitchen, this app is your gateway to a world of delicious recipes, culinary inspiration, and seamless meal planning. (MERN technologies)!</p>
 
                 <div className=" flex  mt-2 gap-2 justify-evenly">
                   <a href="https://manishrecipe.netlify.app" target="_blank"> <button className=" px-10 py-2 bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-cyan-500 hover:to-blue-700">Live Preview</button></a>
@@ -107,10 +114,10 @@ function App() {
 
               </div>
 
-              <div className=" border border-gray-500 p-5 rounded-md flex-grow">
+              <div className=" border border-gray-500 p-5 rounded-md ">
                 <img src={project2} alt="" width={700} />
-                <h3 className=" text-lg font-bold mt-5">Recipe Book app demo</h3>
-                <p className=" text-gray-400 mt-4">this recipe book are fully build in react vite technology and backend use Nodejs express  framework.</p>
+                <h3 className=" text-lg font-bold mt-5">URL shortner</h3>
+                <p className=" text-gray-400 mt-4">The URL Shortener service is your go-to solution for simplifying long and cumbersome web addresses into concise, easy-to-share links. Whether you're sharing links on social media, emails, or any digital platform, our URL Shortener makes the process effortless and efficient.</p>
 
                 <div className=" flex  mt-2 gap-2 justify-evenly">
                   <a href="https://manishlinkshortner.netlify.app" target="_blank"> <button className=" px-10 py-2 bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-cyan-500 hover:to-blue-700">Live Preview</button></a>
@@ -120,11 +127,25 @@ function App() {
               </div>
 
             </div>
+            
             <div className=" flex  sm:flex-row flex-col gap-10 mt-11 w-full ">
-              <div className=" border border-gray-500 p-3 rounded-md flex-grow">
+              
+              <div className=" border border-gray-500 p-5 rounded-md ">
+                <img src={project4} alt="" width={700} />
+                <h3 className=" text-lg font-bold mt-5">Blogs</h3>
+                <p className=" text-gray-400 mt-4">Welcome to our vibrant and informative blog, your go-to destination for insightful articles, engaging content, and a deep dive into topics that matter.our blog is designed to enrich your journey with valuable perspectives. (MERN technologies)</p>
+
+                <div className=" flex  mt-2 gap-2 justify-evenly">
+                  <a href="https://manishblog.netlify.app/article-list" target="_blank"> <button className=" px-10 py-2 bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-cyan-500 hover:to-blue-700">Live Preview</button></a>
+                  <a href="https://github.com/manish91023/CodeClauseInternship_Project_Linkshortner" target="_blank"> <button className=" px-6 py-2 border rounded-full hover:bg-blue-600">Checkout github</button></a>
+                </div>
+
+              </div>
+
+              <div className=" border border-gray-500 p-3 rounded-md ">
                 <img src={project3} alt="" width={700} />
-                <h3 className=" text-lg font-bold mt-5">Recipe Book app demo</h3>
-                <p className=" text-gray-400 mt-4">this recipe book are fully build in react vite technology and backend use Nodejs express  framework.</p>
+                <h3 className=" text-lg font-bold mt-5">Genre games</h3>
+                <p className=" text-gray-400 mt-4">Welcome to "Genres Games," where diversity meets entertainment in the world of gaming. This innovative platform celebrates the richness of gaming genres, offering a unique experience that transcends traditional boundaries.</p>
 
                 <div className=" flex  mt-2 gap-2 justify-evenly">
                   <a href="https://generegames.netlify.app" target="_blank"> <button className=" px-10 py-2 bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-cyan-500 hover:to-blue-700">Live Preview</button></a>
@@ -133,10 +154,25 @@ function App() {
 
               </div>
 
-              <div className=" border border-gray-500 p-5 rounded-md flex-grow">
+
+            </div>
+            <div className=" flex  sm:flex-row flex-col gap-10 mt-11 w-full ">
+              <div className=" border border-gray-500 p-3 rounded-md flex-grow">
+                <img src={project5} alt="" width={700} />
+                <h3 className=" text-lg font-bold mt-5">Youtube</h3>
+                <p className=" text-gray-400 mt-4">Welcome to YouTube, your premier destination for discovering, watching videos that span every interest and passion imaginable. YouTube offers a diverse and dynamic platform where content creators from around the globe share their stories and expertise. (MERN technologies)</p>
+
+                <div className=" flex  mt-2 gap-2 justify-evenly">
+                  <a href="https://manishcloneyoutube.netlify.app" target="_blank"> <button className=" px-10 py-2 bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-cyan-500 hover:to-blue-700">Live Preview</button></a>
+                  <a href="https://github.com/manish91023/youtubeClone" target="_blank"> <button className=" px-6 py-2 border rounded-full hover:bg-blue-600">Checkout github</button></a>
+                </div>
+
+              </div>
+
+              <div className=" border border-gray-500 p-5 rounded-md flex-grow" >
                 <img src={project4} alt="" width={700} />
-                <h3 className=" text-lg font-bold mt-5">Recipe Book app demo</h3>
-                <p className=" text-gray-400 mt-4">this recipe book are fully build in react vite technology and backend use Nodejs express  framework.</p>
+                <h3 className=" text-lg font-bold mt-5">Blog</h3>
+                <p className=" text-gray-400 mt-4">Welcome to our vibrant and informative blog, your go-to destination for insightful articles, engaging content, and a deep dive into topics that matter.our blog is designed to enrich your journey with valuable perspectives. (MERN technologies)</p>
 
                 <div className=" flex  mt-2 gap-2 justify-evenly">
                   <a href="https://manishblog.netlify.app/article-list" target="_blank"> <button className=" px-10 py-2 bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-cyan-500 hover:to-blue-700">Live Preview</button></a>
@@ -152,7 +188,7 @@ function App() {
         <section>
           {/* technology section */}
           <section className=" mt-12">
-            <div className=" container m-auto px-4">
+            <div className=" container m-auto px-4" data-aos="fade-left">
               <h2 id="technologies" className=" text-2xl font-semibold">Technologies</h2>
 
               <div className="mt-8">
@@ -237,24 +273,24 @@ function App() {
             <div className=" container m-auto px-4">
               <div className=" flex flex-col sm:flex-row">
 
-                <div className=" w-[100%] h-[400px] mx-[20px] sm:mx-0">
+                <div className=" w-[100%] h-[400px] mx-[20px] sm:mx-0" data-aos="flip-left">
                   <img className="w-[310px] h-[310px] sm:w-[400px] sm:h-[400px] rounded-lg" src={aboutImage} alt="" />
                 </div>
                 <div className=" w-[100%] ">
                 <div className=" flex flex-wrap gap-2 justify-center ">
-                  <div className=" bg-[#1f3057] w-[150px] h-[220px] py-2  rounded-lg hover:bg-transparent border transition-all ">
+                  <div className=" bg-[#1f3057] w-[150px] h-[220px] py-2  rounded-lg hover:bg-transparent border transition-all " data-aos="flip-up">
                     <GiAchievement className=" mx-auto" />
                     <h2 className=" text-center font-bold">Student</h2>
                     <p className=" text-center">VINAYAKA MISSION RESEARCH FOUNDATION (2022-26)</p>
                   </div>
 
-                  <div className=" bg-[#1f3057] w-[150px] h-[220px] py-2  rounded-lg hover:bg-transparent border transition-all ">
+                  <div className=" bg-[#1f3057] w-[150px] h-[220px] py-2  rounded-lg hover:bg-transparent border transition-all " data-aos="flip-right">
                     <PiStudentFill className=" mx-auto" />
                     <h2 className=" text-center font-bold">Course</h2>
                     <p className=" text-center"> B.E(Computer Science & Engineering)</p>
                   </div>
 
-                  <div className=" bg-[#1f3057] w-[150px] h-[220px] py-2  rounded-lg hover:bg-transparent border transition-all ">
+                  <div className=" bg-[#1f3057] w-[150px] h-[220px] py-2  rounded-lg hover:bg-transparent border transition-all " data-aos="flip-left">
                     <FaProjectDiagram className=" mx-auto" />
                     <h2 className=" text-center font-bold">Projects</h2>
                     <p className=" text-center">3+ Completed</p>
@@ -262,7 +298,8 @@ function App() {
                 </div>
                 <div className=" my-4">
                    <p className=" font-serif">
-                   I am looking for an Entry-level position in the field of Mern stack Development or Software Development. Currently pursuing Distance MCA from Chandigarh University, And I have a good knowledge of Java, Reactjs, NodeJs, Express Js, MongoDB, C, C++, Data Structures and Algorithms, HTML, CSS and JavaScript. Looking for an Internship opportunity or a Full-time opportunity as a Software Developer to follow my passion and that is Solving Problems.
+                   I am looking for an Entry-level position in the field of Mern stack Development or Software Development. Currently pursuing full-time B.E(Computer Science & Engineering) from VINAYAKA MISSION RESEARCH FOUNDATION UNIVERSITY
+                   , And I have a good knowledge of Java, Reactjs, NodeJs, Express Js, MongoDB, C, C++, Data Structures and Algorithms, HTML, CSS and JavaScript. Looking for an Internship opportunity or a Full-time opportunity as a Software Developer to follow my passion and that is Solving Problems.
                    </p>
                 </div>
                 </div>
